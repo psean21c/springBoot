@@ -1,5 +1,7 @@
 # springBoot with Postgres
 
+## Lesson-1 : GET method (hardcoded)
+
 * Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.bts.epiphany.model.Product
 
 * Check that you have the EL dependencies on the classpath, or use ParameterMessageInterpolator instead
@@ -27,5 +29,8 @@ javax.validation.ValidationException: HV000183: Unable to load 'javax.el.Express
 * java.net.BindException: Address already in use: bind
 
 	server.port=8085
+
+        
+## Lesson-2 : GET method (DB)
 
         

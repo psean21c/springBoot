@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.bts.epiphany.model.Product;
@@ -11,13 +12,12 @@ import com.bts.epiphany.model.Product;
 @Service
 public class ProductService {
 
-	List<Product> products = new ArrayList<Product> (Arrays.asList(
-			new Product(1,"Prod1",10),
-			new Product(2,"Prod2",20),
-			new Product(3,"Prod3",30)			
-			));
+	@Autowired
+	ProductRepository productRepository;
 
 	public List<Product> getAllProducts(){
+		List<Product> products = new ArrayList<Product>();
+		productRepository.findAll().forEach(products::add);
 		return products;
 	}
 	
