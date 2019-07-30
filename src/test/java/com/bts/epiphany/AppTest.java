@@ -1,4 +1,4 @@
-package com.accenture.simon2;
+package com.bts.epiphany;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

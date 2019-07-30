@@ -1,7 +1,9 @@
-package com.accenture.simon2.dao;
+package com.bts.epiphany.dao;
 
 import java.util.List;
-import com.accenture.simon2.model.Product;
+
+import com.bts.epiphany.model.Product;
+
 
 
 public interface ProductDao {

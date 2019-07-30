@@ -1,4 +1,4 @@
-package com.accenture.simon2.model;
+package com.bts.epiphany.model;
 
 
 import java.io.Serializable;

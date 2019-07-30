@@ -1,4 +1,4 @@
-package com.accenture.simon2.dao;
+package com.bts.epiphany.dao;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -16,8 +16,7 @@ import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.support.JdbcDaoSupport;
 import org.springframework.stereotype.Repository;
 
-import com.accenture.simon2.dao.ProductDao;
-import com.accenture.simon2.model.Product;
+import com.bts.epiphany.model.Product;
 
 
 @Repository

@@ -1,13 +1,12 @@
-package com.accenture.simon2.service.impl;
+package com.bts.epiphany.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.accenture.simon2.dao.ProductDao;
-import com.accenture.simon2.model.Product;
-import com.accenture.simon2.service.ProductService;
+import com.bts.epiphany.dao.ProductDao;
+import com.bts.epiphany.model.Product;
 
 
 @Service

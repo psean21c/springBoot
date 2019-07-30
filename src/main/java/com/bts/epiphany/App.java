@@ -1,4 +1,4 @@
-package com.accenture.simon2;
+package com.bts.epiphany;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,18 +10,19 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 
-import com.accenture.simon2.service.ProductService;
-import com.accenture.simon2.model.Product;
+import com.bts.epiphany.model.Product;
+import com.bts.epiphany.service.ProductService;
+
 
 @SpringBootApplication
-@ComponentScan("com.accenture.simon2.service.impl, com.accenture.simon2.dao")
-public class SpringPostgresApplication {
+@ComponentScan("com.bts.epiphany.service, com.bts.epiphany.dao")
+public class App {
 
 	@Autowired
 	ProductService productService;
 
 	public static void main(String[] args) {
-		ApplicationContext context = SpringApplication.run(SpringPostgresApplication.class, args);
+		ApplicationContext context = SpringApplication.run(App.class, args);
 		ProductService productService = context.getBean(ProductService.class);
 		
 		/*
@@ -79,6 +80,3 @@ public class SpringPostgresApplication {
 		System.out.println("#######################################");
 	}
 }
-
-// https://grokonez.com/spring-framework/spring-boot/how-to-use-jdbc-template-with-spring-boot-for-postgres-database
-	
