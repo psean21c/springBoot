@@ -67,3 +67,10 @@ javax.validation.ValidationException: HV000183: Unable to load 'javax.el.Express
 	            </exclusion>
 	        </exclusions>            
         </dependency>
+
+* In order to run the Servlet on JBOSS
+```java
+@SpringBootApplication
+public class App extends SpringBootServletInitializer{
+```
+## Lesson-4 : Enhance
