@@ -5,3 +5,8 @@ CREATE TABLE PRODUCT (
     NAME varchar(100) NOT NULL,
     AGE smallint NOT NULL
 );
+
+INSERT INTO PRODUCT(PRODUCT_ID, NAME, AGE) values
+    (1,'Park', 20),
+    (2,'Kwon', 15)
+;
